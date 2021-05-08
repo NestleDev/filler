@@ -35,7 +35,7 @@ function deleteRecursive(currentPath) {
             console.log(currentPath, "--------");
 
             fs.rmdir(currentPath, (err) => {
-                if (err) throw err;
+                // if (err) throw err;
 
                 deleteRecursive(path.join(currentPath, '../'))
             })
